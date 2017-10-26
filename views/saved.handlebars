@@ -1,0 +1,41 @@
+{{> navs/saved}}
+
+<h3 class="siteTitle">{{this.subtitle}}</h3>
+
+
+
+<div id="articlesSaved">
+    {{#if articles}}
+        {{#each articles}}
+            <div class="well">
+                <div class="row">
+                    <div class="" id="linkHeader">
+                        <h4><a href="{{this.link}}">{{this.title}}</a></h4>
+                    </div>
+                    <div class="" id="saveBtn">
+                        <form class="form-inline" style="height: 100%;">
+                            <button type="button" data-toggle="modal" data-target="#{{this.id}}"   class="btn btn-success" id="addNote">Add a Note</button>
+                        </form>
+                        <!-- <a class="btn btn-success" href="#" data-toggle="modal" data-target="#{{this.id}}" style="height: 100%;" id="saveArt">Notes</a> -->
+                    </div>
+                    <div class="" id="dismissBtn">
+                        <form class="form-inline" action="/api/articles/{{this.id}}?_method=DELETE" method="POST" style="height: 100%;">
+                            <button type="submit" class="btn btn-warning" id="dismissArt">Delete Article</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            {{> content/modal}}
+            
+        {{/each}}
+    {{else}}
+        <div class="well">
+            <h4>There are no saved articles.</h4>
+        </div>
+    {{/if}}
+</div>
+
+<footer class="savedFooter">
+    <h6>&copy; 2017 Joshua Weber</h6>
+</footer>

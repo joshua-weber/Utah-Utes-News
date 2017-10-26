@@ -1,0 +1,343 @@
+/**
+ * Homework Assignment 18 - All the News That's Fit to Scrape
+ * Jarrett Tolman - assets/css/style.css
+ **/
+
+body {
+    /*min-height: 100%;*/
+    background: url(../muss.jpg) top right no-repeat;
+    /*background-size: cover;*/
+    background-attachment: fixed;
+    /*top: 0px;*/
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Rubik Mono One', sans-serif;
+}
+
+h3 {
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+h6 {
+    padding: 10px;
+    margin: 0px;
+    color: white;
+}
+
+a {
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.navbar-btn {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    position: absolute;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.29);
+    border: 1px solid white;
+    color: white;
+    font-weight: 100;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.navbar-btn:hover {
+	background-color: white;
+	color: black;
+	border: transparent;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    /* background: #c41230; */
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #777;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-bottom: 3px solid rgba(255, 255, 255, 0.42);
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, .8);
+    border-bottom: 3px solid white;
+    font-weight: 900;
+}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 900;
+    color: white;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
+}
+
+.jumbotron, .backgroundImage {
+    background: none;
+}
+
+.jumbotron {
+    padding: 0px;
+}
+
+.navbar-default {
+     background-color: transparent; 
+     border-color: 0px; 
+}
+
+.navbar {
+    position: sticky;
+    /*min-height: 50px;*/
+    /*margin-bottom: 20px;*/
+    border: 0px;
+    background-color: transparent; 
+    border-color: 0px; 
+    top: 0px
+    /*transition: width 2s;*/
+    transition-timing-function: ease;
+}
+
+.jumbotron .siteTitle {
+	text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+.siteTitle {
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+}
+
+#scrapeBtn {
+    display: block;
+    margin: 0px auto;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid white;
+    color: white;
+    width: 170px;
+    text-align: center;
+
+}
+
+#scrapeBtn:hover {
+    background-color: white;
+    color: black;
+    border: transparent;
+}
+
+#saveBtn {
+    height: 100%;
+    border-radius: 0px;
+    display: inline-block;
+}
+
+#saveArt {
+    height: 100%;
+    border-radius: 0px;
+    position: absolute;
+    right: 118px;
+}
+
+#addNote {
+    height: 100%;
+    border-radius: 0px;
+    position: absolute;
+    right: 109px;
+}
+
+#dismissBtn {
+    height: 100%;
+    display: inline-block;
+    float: right;
+}
+
+#dismissArt {
+    height: 100%;
+    border-radius: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #bf0000;
+     border: 0px; 
+}
+
+.btn-success:hover {
+    color: #fff;
+    background-color: #789e2a;
+    border: 0px;
+}
+
+.btn-warning {
+    color: #fff;
+    background-color: rgb(103, 18, 18);
+     border: 0px; 
+}
+
+.btn-warning:hover {
+    color: #fff;
+    background-color: #000;
+    border: 0px;
+}
+
+
+
+/* Saved Articles*/
+
+#articles {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 270px;
+}
+
+#articlesSaved {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 70px;
+}
+
+.well {
+    min-height: 80px;
+    padding: 0px;
+    margin-bottom: 20px;
+    background-color: rgb(245, 245, 245);
+    border: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: 0 0px 31px rgb(0, 0, 0);
+    /* height: 100%; */
+    width: 100%;
+    position: relative;
+    top: -10px;
+}
+
+.wellModal {
+    /*min-height: 80px;*/
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: rgb(245, 245, 245);
+    border: 0px;
+    border-radius: 0px;
+    width: 100%;
+    position: relative;
+    top: -10px;
+}
+
+.row {
+    margin-right: 0px; 
+    margin-left: 0px; 
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#linkHeader {
+    padding-top: 20px;
+    display: inline-block;
+    position: absolute;
+    padding-left: 20px;
+}
+
+.formInput {
+    position: absolute;
+}
+
+.modal-footer {
+    position: relative;
+}
+
+.modal-content {
+    border-radius: 0px;
+}
+
+.noteText {
+    display: inline-block;
+}
+
+.deleteNote {
+    display: inline-block;
+    float: right;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #99cc33;
+    border-color: #99cc33;
+    border-radius: 0px;
+    /*border: 0px;*/
+}
+
+.form-control {
+    border-radius: 0px;
+}
+
+.btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #000;
+    border-radius: 0px;
+}
+
+.btn-default:hover {
+    color: #fff;
+    background-color: #000000;
+    /* border-color: #adadad; */
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active {
+    color: #fff;
+    background-color: #739827;
+    border-color: #739827;
+    box-shadow: none;
+}
+
+#logo {
+    
+}
+
+#logo:hover {
+    color: white;
+}
+
+.mainFooter {
+    background: rgba(0,0,0,.5);
+    /*position: absolute;*/
+    bottom: 0px;
+    width: 100%;
+}
+
+.savedFooter {
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+

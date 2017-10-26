@@ -1,0 +1,60 @@
+{{> navs/index}}
+
+<div class="jumbotron">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="siteTitle">{{this.title}}</h1>
+            <h3>{{this.subtitle}}</h3>
+            <a class="btn btn-primary" id="scrapeBtn" href="/api/articles/scrape">Get Latest Articles!</a>
+        </div>
+    </div>
+</div>
+
+<div id="articles">
+    {{#each articles}}
+        <div class="well">
+            <div class="row">
+                <div class="" id="linkHeader">
+                    <h4><a href="{{this.link}}">{{this.title}}</a></h4>
+                </div>
+                <div class="" id="saveBtn">
+                    <form class="form-inline" action="/api/articles/save/{{this.id}}" method="POST" style="height: 100%;">
+                        <button type="submit" id="saveArt" class="btn btn-success">Save Article</button>
+                    </form>
+                </div>
+                <div class="" id="dismissBtn">
+                    <form class="form-inline" action="/api/articles/dismiss/{{this.id}}?_method=DELETE" method="POST" style="height: 100%;">
+                        <button type="submit" id="dismissArt" class="btn btn-warning">Dismiss Article</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>
+
+<footer class="mainFooter">
+    <h6>&copy; 2017 Joshua Weber</h6>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
